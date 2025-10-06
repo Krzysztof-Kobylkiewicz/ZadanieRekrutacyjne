@@ -106,7 +106,7 @@ foreach (var employee in employees3)
 
 	bool canRequest = Employee3.IfEmployeeCanRequestVacation(employee, employeeVacations, vacationPackage);
 
-	Console.WriteLine($"Pracownik o id {employee.Id} {(canRequest ? "" : "nie ")} wystąpić o wniosek urlopowy.");
+	Console.WriteLine($"{(canRequest ? "Może" : "Nie może")} wystąpić o wniosek urlopowy.\n");
 }
 
 // 5. Testy w katalogu Tests/UnitTests
